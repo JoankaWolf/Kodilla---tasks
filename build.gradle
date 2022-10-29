@@ -1,5 +1,5 @@
 plugins {
-	id 'org.springframework.boot' version '2.6.11'
+	id 'org.springframework.boot' version '2.5.13'
 	id 'io.spring.dependency-management' version '1.0.13.RELEASE'
 	id 'java'
 //	id 'war'
@@ -38,6 +38,9 @@ dependencies {
 
 	testCompileOnly 'org.projectlombok:lombok:1.18.24'
 	testAnnotationProcessor 'org.projectlombok:lombok:1.18.24'
+
+	implementation 'io.springfox:springfox-swagger2:2.9.2'
+	implementation 'io.springfox:springfox-swagger-ui:2.9.2'
 
 //	providedRuntime ('org.springframework.boot:spring-boot-starter-tomcat')
 }
