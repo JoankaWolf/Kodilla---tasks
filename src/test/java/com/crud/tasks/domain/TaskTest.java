@@ -28,8 +28,7 @@ class TaskTest {
         long id = task.getId();
         List<Task> tasks  = taskRepository.findAll();
 
-        assertEquals(1, tasks.size());
-
+        assertEquals(5, tasks.size());
 
         //Cleanup
         taskRepository.deleteById(id);
