@@ -19,7 +19,7 @@ import static org.mockito.Mockito.when;
 
 
 @SpringBootTest
-class TaskControllerTest {
+class OldTaskControllerTest {
 
     @InjectMocks
     private TaskController taskController;
