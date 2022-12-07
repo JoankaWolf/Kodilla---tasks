@@ -43,6 +43,8 @@ dependencies {
 	implementation 'io.springfox:springfox-swagger-ui:2.9.2'
 	implementation 'com.google.code.gson:gson'
 
+	implementation('org.springframework.boot:spring-boot-starter-thymeleaf')
+
 //	providedRuntime ('org.springframework.boot:spring-boot-starter-tomcat')
 }
 
