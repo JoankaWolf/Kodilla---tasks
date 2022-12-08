@@ -21,7 +21,7 @@ public class EmailScheduler {
     public void sendInformationEmail() {
         long size = taskRepository.count();
         if(taskRepository.count() == 1) {
-            simpleEmailService.send(
+            simpleEmailService.sendDaily(
                     new Mail(
                             adminConfig.getAdminMail(),
                             SUBJECT,
@@ -30,7 +30,7 @@ public class EmailScheduler {
                     )
             );
         } else {
-            simpleEmailService.send(
+            simpleEmailService.sendDaily(
                     new Mail(
                             adminConfig.getAdminMail(),
                             SUBJECT,
